@@ -3,175 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Ritchie | مدرسة دينيس ريتشي</title>
+    <title>Dennis Ritchie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        
-        body {
-            background: radial-gradient(circle at top, #111827, #030712);
-            color: #f3f4f6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 30px 20px;
-        }
-
-        .school-container {
-            background: rgba(17, 24, 39, 0.6);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-            padding: 40px 25px;
-            border-radius: 24px;
-            width: 100%;
-            max-width: 480px;
-            text-align: center;
-            position: relative;
-        }
-
-        /* خط إضاءة تكنولوجي فوق السيت */
-        .school-container::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 4px;
-            background: linear-gradient(90deg, #10b981, #06b6d4, #3b82f6);
-            border-radius: 24px 24px 0 0;
-        }
-
-        .logo-area i {
-            font-size: 3.8rem;
-            color: #10b981;
-            margin-bottom: 15px;
-            filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.4));
-        }
-
-        h1 { font-size: 2.1rem; color: #ffffff; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 5px; }
-        .subtitle { font-size: 1.1rem; color: #9ca3af; margin-bottom: 30px; font-weight: 400; }
-
-        /* ستايل الأزرار الاحترافية */
-        .links-wrapper { display: flex; flex-direction: column; gap: 15px; margin-bottom: 35px; }
-        
-        .btn-link {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 20px;
-            border-radius: 14px;
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: 600;
-            font-size: 1.05rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255, 255, 255, 0.03);
-        }
-
-        /* ألوان الهوية لكل زر مع تأثير التحويم */
-        .btn-phone { background: linear-gradient(135deg, #1f2937, #111827); border-left: 4px solid #10b981; }
-        .btn-phone:hover { background: #10b981; color: #030712; box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); transform: translateY(-2px); }
-        .btn-phone:hover i { color: #030712; }
-
-        .btn-insta { background: linear-gradient(135deg, #1f2937, #111827); border-left: 4px solid #e1306c; }
-        .btn-insta:hover { background: linear-gradient(45deg, #f09433, #e1306c, #bc1888); box-shadow: 0 0 20px rgba(225, 48, 108, 0.4); transform: translateY(-2px); }
-
-        .btn-face { background: linear-gradient(135deg, #1f2937, #111827); border-left: 4px solid #1877f2; }
-        .btn-face:hover { background: #1877f2; box-shadow: 0 0 20px rgba(24, 119, 242, 0.4); transform: translateY(-2px); }
-
-        .btn-email { background: linear-gradient(135deg, #1f2937, #111827); border-left: 4px solid #f59e0b; }
-        .btn-email:hover { background: #f59e0b; color: #030712; box-shadow: 0 0 20px rgba(245, 158, 11, 0.4); transform: translateY(-2px); }
-        .btn-email:hover i { color: #030712; }
-
-        .btn-link i { font-size: 1.3rem; transition: 0.3s; }
-        .btn-phone i { color: #10b981; }
-        .btn-insta i { color: #e1306c; }
-        .btn-face i { color: #1877f2; }
-        .btn-email i { color: #f59e0b; }
-
-        /* سيكشن عرض منشورات وتصاور الفيسبوك */
-        .facebook-feed-section {
-            margin-top: 20px;
-            text-align: right;
-            direction: rtl;
-        }
-        .feed-title {
-            font-size: 1rem;
-            color: #9ca3af;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .feed-title i { color: #1877f2; }
-        
-        .fb-container {
-            width: 100%;
-            border-radius: 14px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            background: #ffffff;
-        }
-
-        .footer-text { margin-top: 35px; font-size: 0.8rem; color: #4b5563; letter-spacing: 0.5px; }
+        body { background-color: #0d1117; color: white; font-family: sans-serif; display: flex; justify-content: center; padding: 20px; }
+        .container { width: 100%; max-width: 400px; text-align: center; margin-top: 40px; }
+        h2 { margin-bottom: 30px; color: #58a6ff; font-size: 2rem; }
+        .btn { display: flex; align-items: center; justify-content: center; background: #161b22; padding: 15px; margin: 15px 0; border-radius: 10px; text-decoration: none; color: white; border: 1px solid #30363d; transition: 0.3s; font-weight: bold; font-size: 1.1rem; }
+        .btn:hover { background: #1f242c; border-color: #8b949e; }
+        .btn i { margin-right: 12px; font-size: 1.3rem; }
+        .email-text { font-size: 0.95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     </style>
 </head>
 <body>
 
-    <div class="school-container">
-        <div class="logo-area">
-            <i class="fas fa-laptop-code"></i>
-        </div>
-        <h1>Dennis Ritchie</h1>
-        <p class="subtitle">École d'Informatique & de Technologie</p>
-
-        <div class="links-wrapper">
-            <!-- زر الهاتف المباشر -->
-            <a href="tel:+212522697023" class="btn-link btn-phone">
-                <i class="fas fa-phone-alt"></i>
-                <span>+212 5 22 69 70 23</span>
-            </a>
-
-            <!-- زر إنستغرام -->
-            <a href="https://www.instagram.com/ecoledennisritchie?igsh=MXYzM2R1bXhoMm9uYw==" target="_blank" class="btn-link btn-insta">
-                <i class="fab fa-instagram"></i>
-                <span>Instagram Official</span>
-            </a>
-
-            <!-- زر فيسبوك -->
-            <a href="https://www.facebook.com/share/1JfECwGm6s/?mibextid=wwXIfr" target="_blank" class="btn-link btn-face">
-                <i class="fab fa-facebook-f"></i>
-                <span>Facebook Page</span>
-            </a>
-
-            <!-- زر البريد الإلكتروني (Gmail) -->
-            <a href="mailto:Contact.ecole.dennisritchie@gmail.com" class="btn-link btn-email">
-                <i class="fas fa-envelope"></i>
-                <span>Contact.ecole.dennisritchie@gmail.com</span>
-            </a>
-        </div>
-
-        <!-- عرض ريلز وصور فيسبوك مباشرة في السيت -->
-        <div class="facebook-feed-section">
-            <div class="feed-title">
-                <i class="fab fa-facebook"></i>
-                <span>آخر المنشورات والتصاور ف الفيسبوك:</span>
-            </div>
-            <div class="fb-container">
-                <!-- هذا التضمين الرسمي كيجيب المنشورات لايف من الصفحة -->
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JfECwGm6s%2F&tabs=timeline&width=430&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" 
-                    width="100%" 
-                    height="400" 
-                    style="border:none;overflow:hidden" 
-                    scrolling="no" 
-                    frameborder="0" 
-                    allowfullscreen="true" 
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                </iframe>
-            </div>
-        </div>
-
-        <p class="footer-text">© 2026 École Dennis Ritchie. All rights reserved.</p>
-    </div>
+<div class="container">
+    <h2>Dennis Ritchie</h2>
+    
+    <a href="tel:+212522697023" class="btn"><i class="fas fa-phone"></i> +212 5 22 69 70 23</a>
+    <a href="https://www.instagram.com/ecoledennisritchie" class="btn"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="https://www.facebook.com/share/1JfECwGm6s/" class="btn"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="mailto:Contact.ecole.dennisritchie@gmail.com" class="btn">
+        <i class="fas fa-envelope"></i>
+        <span class="email-text">Contact.ecole.dennisritchie@gmail.com</span>
+    </a>
+</div>
 
 </body>
 </html>
+
