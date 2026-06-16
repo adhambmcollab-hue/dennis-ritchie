@@ -6,29 +6,137 @@
     <title>Dennis Ritchie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { background-color: #0d1117; color: white; font-family: sans-serif; display: flex; justify-content: center; padding: 20px; }
-        .container { width: 100%; max-width: 400px; text-align: center; margin-top: 40px; }
-        h2 { margin-bottom: 30px; color: #58a6ff; font-size: 2rem; }
-        .btn { display: flex; align-items: center; justify-content: center; background: #161b22; padding: 15px; margin: 15px 0; border-radius: 10px; text-decoration: none; color: white; border: 1px solid #30363d; transition: 0.3s; font-weight: bold; font-size: 1.1rem; }
-        .btn:hover { background: #1f242c; border-color: #8b949e; }
-        .btn i { margin-right: 12px; font-size: 1.3rem; }
-        .email-text { font-size: 0.95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        
+        body {
+            background-color: #0b0f17;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 410px;
+            background: rgba(22, 27, 34, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 28px;
+            padding: 35px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* صورة اللوجو الافتراضية بحال الستايل اللي ف الصورة */
+        .avatar-area {
+            width: 85px;
+            height: 85px;
+            background: linear-gradient(135deg, #232936, #121620);
+            border: 2px solid #30363d;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .avatar-area i { font-size: 2.2rem; color: #58a6ff; }
+
+        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; color: #ffffff; }
+        .tagline { font-size: 0.95rem; color: #8b949e; margin-bottom: 30px; }
+
+        .section-title {
+            font-size: 0.85rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 25px 0 12px;
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+
+        .btn-list { display: flex; flex-direction: column; gap: 14px; }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px;
+            border-radius: 14px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.05rem;
+            transition: transform 0.2s, filter 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+        .btn i { font-size: 1.3rem; }
+
+        /* ألوان الأزرار المحددة بالظبط */
+        .btn-insta { background: linear-gradient(45deg, #f09433 0%, #e1306c 25%, #bc1888 50%, #962fbf 75%, #4c5fd7 100%); }
+        .btn-face { background-color: #1877f2; }
+        .btn-phone { background-color: #00e676; color: #000000; } /* أخضر فاقع بحال واتساب */
+        .btn-email { background-color: #ff9100; } /* برتقالي مميز للجيمايل */
+
+        footer { margin-top: 35px; font-size: 0.8rem; color: #484f58; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h2>Dennis Ritchie</h2>
+<div class="wrapper">
+    <!-- اللوجو الفوقاني -->
+    <div class="avatar-area">
+        <i class="fas fa-code"></i>
+    </div>
     
-    <a href="tel:+212522697023" class="btn"><i class="fas fa-phone"></i> +212 5 22 69 70 23</a>
-    <a href="https://www.instagram.com/ecoledennisritchie" class="btn"><i class="fab fa-instagram"></i> Instagram</a>
-    <a href="https://www.facebook.com/share/1JfECwGm6s/" class="btn"><i class="fab fa-facebook"></i> Facebook</a>
-    <a href="mailto:Contact.ecole.dennisritchie@gmail.com" class="btn">
-        <i class="fas fa-envelope"></i>
-        <span class="email-text">Contact.ecole.dennisritchie@gmail.com</span>
-    </a>
+    <!-- السمية اللي طلبات -->
+    <h1>Dennis Ritchie</h1>
+    <p class="tagline">École d'Informatique & de Technologie</p>
+
+    <!-- الأزرار الفوقانية -->
+    <div class="section-title">
+        <span>قنواتنا / OUR LINKS</span>
+    </div>
+    <div class="btn-list">
+        <!-- إنستغرام بالرابط واللون ديالو -->
+        <a href="https://www.instagram.com/ecoledennisritchie" target="_blank" class="btn btn-insta">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        
+        <!-- فيسبوك بالرابط واللون ديالو -->
+        <a href="https://www.facebook.com/share/1JfECwGm6s/" target="_blank" class="btn btn-face">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+    </div>
+
+    <!-- القسم التحتاني الخاص بالتواصل كيفما بغيتيه بالظبط -->
+    <div class="section-title">
+        <span>للتواصل معنا / CONTACT US</span>
+    </div>
+    <div class="btn-list">
+        <!-- النمرة بلون أخضر والرابط مخبي لداخل -->
+        <a href="tel:+212522697023" class="btn btn-phone">
+            <i class="fas fa-phone-alt"></i> Call Us (WhatsApp)
+        </a>
+        
+        <!-- الجيمايل بلون برتقالي والرابط مخبي لداخل مباينش طويل -->
+        <a href="mailto:Contact.ecole.dennisritchie@gmail.com" class="btn btn-email">
+            <i class="fas fa-envelope"></i> Send Email (Gmail)
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2026 Dennis Ritchie • All Rights Reserved</p>
+    </footer>
 </div>
 
 </body>
 </html>
+
 
